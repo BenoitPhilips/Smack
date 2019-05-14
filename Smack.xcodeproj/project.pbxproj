@@ -55,13 +55,45 @@
 			isa = PBXGroup;
 			children = (
 				0044E784228AA4720081D3A1 /* AppDelegate.swift */,
-				0044E786228AA4720081D3A1 /* ViewController.swift */,
-				0044E788228AA4720081D3A1 /* Main.storyboard */,
-				0044E78B228AA4730081D3A1 /* Assets.xcassets */,
-				0044E78D228AA4730081D3A1 /* LaunchScreen.storyboard */,
+				0044E796228AA47C0081D3A1 /* Models */,
+				0044E799228AA4A50081D3A1 /* Controllers */,
+				0044E798228AA4A00081D3A1 /* Views */,
+				0044E797228AA4910081D3A1 /* Supporting Files */,
 				0044E790228AA4730081D3A1 /* Info.plist */,
 			);
 			path = Smack;
+			sourceTree = "<group>";
+		};
+		0044E796228AA47C0081D3A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0044E797228AA4910081D3A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0044E78B228AA4730081D3A1 /* Assets.xcassets */,
+				0044E78D228AA4730081D3A1 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0044E798228AA4A00081D3A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0044E788228AA4720081D3A1 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0044E799228AA4A50081D3A1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0044E786228AA4720081D3A1 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
