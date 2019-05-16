@@ -5,7 +5,7 @@
 //  Created by Benoit Philips on 15/05/2019.
 //  Copyright © 2019 HumbeekWave. All rights reserved.
 //
-// started second Devstart2 for further changes
+// started Devstart2 and 3 merged into master
 
 
 import UIKit
