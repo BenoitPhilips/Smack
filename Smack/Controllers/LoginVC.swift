@@ -1,40 +1,44 @@
 //
-//  ChannelVC.swift
+//  LoginVC.swift
 //  Smack
 //
-//  Created by Benoit Philips on 15/05/2019.
+//  Created by Benoit Philips on 16/05/2019.
 //  Copyright © 2019 HumbeekWave. All rights reserved.
 //
-// started Devstart4
-
 
 import UIKit
 
 //=======================================================================================
 
-class ChannelVC: UIViewController {
-    
+ class LoginVC: UIViewController {
+
     //---------------------------------------------------------------------------------------
     //MARK: - Outlets
-
-    @IBOutlet weak var loginBtn: UIButton!
+    
+    @IBOutlet weak var UsernameTxtFld: UITextField!
+    @IBOutlet weak var passwordTxtFld: UITextField!
+    
     
     //---------------------------------------------------------------------------------------
     //MARK: - Initialising
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.revealViewController().rearViewRevealWidth = self.view.frame.width - 60
-        
+   
     }
     
     //---------------------------------------------------------------------------------------
-    //MARK: - Action functions
+    //MARK: - functions
     
-    @IBAction func loginBtnPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: TO_LOGIN, sender: nil)
+    @IBAction func closePressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func loginPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func signUpPressed(_ sender: UIButton) {
+    }
     
 }
 

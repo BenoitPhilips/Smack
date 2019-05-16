@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00328B08228D31E7001C6D11 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00328B07228D31E7001C6D11 /* LoginVC.swift */; };
 		0044E785228AA4720081D3A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044E784228AA4720081D3A1 /* AppDelegate.swift */; };
 		0044E78A228AA4720081D3A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0044E788228AA4720081D3A1 /* Main.storyboard */; };
 		0044E78C228AA4730081D3A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0044E78B228AA4730081D3A1 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00328B07228D31E7001C6D11 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		0044E781228AA4720081D3A1 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0044E784228AA4720081D3A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0044E789228AA4720081D3A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			children = (
 				005C372B228BF31E00FE88EA /* ChatVC.swift */,
 				005C372D228BF32E00FE88EA /* ChannelVC.swift */,
+				00328B07228D31E7001C6D11 /* LoginVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				005C372E228BF32E00FE88EA /* ChannelVC.swift in Sources */,
 				005C372C228BF31E00FE88EA /* ChatVC.swift in Sources */,
+				00328B08228D31E7001C6D11 /* LoginVC.swift in Sources */,
 				005C3730228BFCB500FE88EA /* GradientView.swift in Sources */,
 				0044E785228AA4720081D3A1 /* AppDelegate.swift in Sources */,
 				005C372A228AA8A300FE88EA /* SWRevealViewController.m in Sources */,

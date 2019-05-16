@@ -111,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="1032.8" y="-242.42878560719643"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="jVT-wp-YjM">
             <objects>
-                <viewController id="WnL-eg-LdS" sceneMemberID="viewController">
+                <viewController id="WnL-eg-LdS" customClass="LoginVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QsB-Jm-kT2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,6 +122,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6U-o1-72C">
                                 <rect key="frame" x="337" y="28" width="28" height="28"/>
                                 <state key="normal" image="closeButton"/>
+                                <connections>
+                                    <action selector="closePressed:" destination="WnL-eg-LdS" eventType="touchUpInside" id="ef2-gB-9b9"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="Xxc-65-4Co">
                                 <rect key="frame" x="110" y="80" width="155.5" height="40"/>
@@ -191,6 +194,9 @@
                                 <state key="normal" title="Don't have an account ? Sign up here....">
                                     <color key="titleColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUpPressed:" destination="WnL-eg-LdS" eventType="touchUpInside" id="9dq-Hv-twX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N76-J7-WW0">
                                 <rect key="frame" x="62.5" y="286" width="250" height="50"/>
@@ -203,6 +209,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="WnL-eg-LdS" eventType="touchUpInside" id="U4b-d6-XL8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -220,6 +229,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8AL-Ij-GS9"/>
                     </view>
+                    <connections>
+                        <outlet property="UsernameTxtFld" destination="bTd-mx-k6Q" id="QHm-p1-Xsb"/>
+                        <outlet property="passwordTxtFld" destination="lMX-Xp-2aF" id="miv-LD-pgH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ovf-Tt-Hbz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
