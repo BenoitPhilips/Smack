@@ -17,6 +17,7 @@ class ChannelVC: UIViewController {
     //---------------------------------------------------------------------------------------
     //MARK: - Outlets
 
+    @IBOutlet weak var loginBtn: UIButton!
     
     //---------------------------------------------------------------------------------------
     //MARK: - Initialising
@@ -28,8 +29,11 @@ class ChannelVC: UIViewController {
     }
     
     //---------------------------------------------------------------------------------------
-    //MARK: - functions
+    //MARK: - Action functions
     
+    @IBAction func loginBtnPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: TO_LOGIN, sender: nil)
+    }
     
     
 }

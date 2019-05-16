@@ -70,6 +70,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginBtnPressed:" destination="Qcm-v1-wwP" eventType="touchUpInside" id="Oms-At-ual"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -99,10 +102,29 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="6y4-9Z-Od1" id="4sh-EL-imD"/>
+                        <segue destination="WnL-eg-LdS" kind="show" identifier="toLogin" id="l3H-yi-yHL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02H-A1-4gf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1032.8" y="-242.42878560719643"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jVT-wp-YjM">
+            <objects>
+                <viewController id="WnL-eg-LdS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QsB-Jm-kT2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8AL-Ij-GS9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ovf-Tt-Hbz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852" y="-242"/>
         </scene>
         <!--ChatVC-->
         <scene sceneID="yHA-Vc-2FZ">
