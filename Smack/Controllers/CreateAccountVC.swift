@@ -1,45 +1,51 @@
 //
-//  LoginVC.swift
+//  CreateAccountVC.swift
 //  Smack
 //
 //  Created by Benoit Philips on 16/05/2019.
 //  Copyright © 2019 HumbeekWave. All rights reserved.
 //
 
+
 import UIKit
 
 //=======================================================================================
 
- class LoginVC: UIViewController {
+class CreateAccountVC: UIViewController {
 
     //---------------------------------------------------------------------------------------
     //MARK: - Outlets
     
-    @IBOutlet weak var UsernameTxtFld: UITextField!
+    @IBOutlet weak var userNameTxtFld: UITextField!
+    @IBOutlet weak var emailTxtFld: UITextField!
     @IBOutlet weak var passwordTxtFld: UITextField!
-    
-    
     //---------------------------------------------------------------------------------------
     //MARK: - Initialising
     
     override func viewDidLoad() {
         super.viewDidLoad()
-   
+  
     }
     
     //---------------------------------------------------------------------------------------
     //MARK: - Action functions
     
-    @IBAction func closePressed(_ sender: UIButton) {
+    @IBAction func closeBtnPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
-    
-    @IBAction func loginPressed(_ sender: UIButton) {
+ 
+    @IBAction func createAvatarBtnPressed(_ sender: UIButton) {
+   
     }
     
-    @IBAction func signUpPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: TO_CREATE_ACCOUNT, sender: nil)
+    @IBAction func generateBgColorBtnPressed(_ sender: UIButton) {
+   
     }
+    
+    @IBAction func createAccountBtnPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: UNWIND_TO_CHANNEL, sender: nil)
+    }
+    
 }
 
 //=======================================================================================
